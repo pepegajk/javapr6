@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="сделать фотокарточку"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/gallery_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="открыть фотокарточку"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/camera_button"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="308dp"
+        android:layout_height="347dp"
+        android:layout_below="@id/gallery_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="ImageView" />
+
+</RelativeLayout>
